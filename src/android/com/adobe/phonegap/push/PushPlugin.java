@@ -209,6 +209,7 @@ public class PushPlugin extends CordovaPlugin implements PushConstants {
      * If the client application isn't currently active, it is cached for later processing.
      */
     public static void sendExtras(Bundle extras) {
+      Log.v('>>>>>>>>>>>gWebView', gWebView);
         if (extras != null) {
             if (gWebView != null) {
                 sendEvent(convertBundleToJson(extras));
